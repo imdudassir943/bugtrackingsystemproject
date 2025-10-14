@@ -5,10 +5,7 @@ const RegisterPage = () => {
     <div>
       <div class="max-w-4xl max-sm:max-w-lg mx-auto p-6 mt-6">
       <div class="text-center mb-12 sm:mb-16">
-        <a href="javascript:void(0)">
-          <p className='text-4xl text-blue-300 font-semibold'>BUG TRACKING</p>
-        </a>
-        <h4 class="text-slate-600 text-base mt-6">Sign up into your account</h4>
+        <h4 class="text-2xl font-semibold text-blue-400 mt-6">Sign up into your account</h4>
       </div>
 
       <form>

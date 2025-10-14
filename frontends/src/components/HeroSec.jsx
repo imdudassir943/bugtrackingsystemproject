@@ -1,5 +1,6 @@
 import React from "react";
 import bugsImg from '../../src/assets/bugs1.jpg'; 
+import { Link } from "react-router-dom";
 
 const HeroSec = () => {
   return (
@@ -14,7 +15,7 @@ const HeroSec = () => {
       <div className="relative z-10 max-w-screen-xl mx-auto text-center px-6 sm:px-8">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
           Welcome to
-          <span className="text-indigo-400 block">Bugs Tracking System</span>
+          <span className="text-indigo-400 block"> Bugs Tracking System </span>
         </h1>
 
         <p className="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
