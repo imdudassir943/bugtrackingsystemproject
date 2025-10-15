@@ -36,7 +36,7 @@ class Bug(models.Model):
         validators=[validate_screenshot]
     )
     type = models.CharField(max_length=10, choices=TYPE_CHOICES)
-    status = models.CharField(max_length=10)
+    status = models.CharField(max_length=10, choices=BUG_STATUS_CHOICES)
 
     def clean(self):
         if self.type == "feature" and self.status not in dict(self.FEATURE_STATUS_CHOICES):

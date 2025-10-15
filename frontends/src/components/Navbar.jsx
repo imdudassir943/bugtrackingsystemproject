@@ -6,10 +6,10 @@ const Navbar = () => {
     <div>
       <header className="flex shadow-lg py-4 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide relative z-50">
         <div className="flex flex-wrap items-center justify-between gap-4 w-full">
-          <a href="javascript:void(0)"
-            className="lg:absolute max-lg:left-10 lg:top-2/4 lg:left-2/4 lg:-translate-x-1/2 lg:-translate-y-1/2 max-sm:hidden">
-            <p className='text-4xl text-blue-400 font-semibold'>BUG TRACKING</p>
-          </a>
+          <Link className="lg:absolute max-lg:left-10 lg:top-2/4 lg:left-2/4 lg:-translate-x-1/2 lg:-translate-y-1/2 max-sm:hidden"
+          to="/">
+          <p className='text-4xl text-blue-400 font-semibold'>BUG TRACKING</p>
+          </Link>
           <a href="javascript:void(0)"
             className="hidden max-sm:block"><img
               src="https://readymadeui.com/readymadeui-short.svg" alt="logo" className="w-9" />
@@ -35,28 +35,32 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
-                <a href='javascript:void(0)'
-                  className="hover:text-blue-700 text-blue-700 block font-medium text-[15px]">Dashboard</a>
+                <Link className="hover:text-blue-700 text-blue-700 block font-medium text-[15px]" to="/">Home</Link>
               </li>
-              <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='javascript:void(0)'
-                className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">Projects</a>
+              <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/projects">Projects</Link>
               </li>
-              <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='javascript:void(0)'
-                className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">Common Features</a>
+              <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/bugsList">View Existing Bugs</Link>
               </li>
-              <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='javascript:void(0)'
-                className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]">Bugs</a>
+              <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/bugs">Add Bugs</Link>
               </li>
+              
             </ul>
           </div>
 
           <div className="flex items-center ml-auto space-x-6">
+
+            <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
+                <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/features">Common Features</Link>
+            </li>
             
             <Link to="/login" className="font-medium text-[15px] text-blue-700 hover:underline">Login</Link>
 
             <Link
               to="/register"
-              className="px-4 py-2 text-sm rounded-xs font-medium text-white border border-blue-600 bg-blue-600 hover:bg-blue-700 cursor-pointer">
+              className="rounded-lg px-4 py-2 text-sm rounded-xs font-medium text-white border border-blue-600 bg-blue-600 hover:bg-blue-700 cursor-pointer">
               Register
             </Link>
 

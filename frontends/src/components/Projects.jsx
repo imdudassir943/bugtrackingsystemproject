@@ -3,7 +3,7 @@ import React from 'react'
 const Projects = () => {
   return (
     <div>
-        <div class="px-4 py-8">
+      <div class="px-4 py-8">
       <div class="grid lg:grid-cols-2 gap-12 lg:max-w-6xl max-w-2xl mx-auto">
         <div class="text-left">
           <h2 class="text-slate-900 text-3xl font-bold mb-6">Projects Information & Highlights</h2>
