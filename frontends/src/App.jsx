@@ -11,7 +11,6 @@ import BugsInfo from './components/BugsInfo'
 import BugsListPage from './components/BugsList'
 import Features from './components/Features'
 
-
 const App = () => {
   return (
     <Router>

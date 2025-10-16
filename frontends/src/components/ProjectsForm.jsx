@@ -101,54 +101,54 @@ const ProjectsForm = () => {
       </div>
     </div>
 
-    <div class="px-4 py-8">
-      <div class="grid lg:grid-cols-2 gap-12 lg:max-w-6xl max-w-2xl mx-auto">
-        <div class="text-left">
-          <h2 class="text-slate-900 text-3xl font-bold mb-6">Projects Information & Highlights</h2>
-          <p class="mb-4 text-[15px] text-slate-600 leading-relaxed">Get detailed insights into each of our projects — from concept to completion. Explore objectives, technologies used, development timelines, and the challenges overcome along the way. Whether it’s a web application, mobile solution, or research-based system, this section highlights the creativity and technical depth behind every project.</p>
-          <p class="mb-4 text-[15px] text-slate-600 leading-relaxed">Discover the stories behind our projects — how ideas turned into impactful digital solutions. Learn about the tools, frameworks, and strategies that powered each build, and see how innovation meets functionality in every project we deliver.</p>
-          <p class="text-[15px] text-slate-600 leading-relaxed">Explore comprehensive information about our projects, including architecture details, tech stacks, and implementation approaches. Each project showcases problem-solving skills, efficient design patterns, and optimized workflows aimed at delivering high-quality solutions.</p>
+    <div className="px-4 py-8">
+      <div className="grid lg:grid-cols-2 gap-12 lg:max-w-6xl max-w-2xl mx-auto">
+        <div className="text-left">
+          <h2 className="text-slate-900 text-3xl font-bold mb-6">Projects Information & Highlights</h2>
+          <p className="mb-4 text-[15px] text-slate-600 leading-relaxed">Get detailed insights into each of our projects — from concept to completion. Explore objectives, technologies used, development timelines, and the challenges overcome along the way. Whether it’s a web application, mobile solution, or research-based system, this section highlights the creativity and technical depth behind every project.</p>
+          <p className="mb-4 text-[15px] text-slate-600 leading-relaxed">Discover the stories behind our projects — how ideas turned into impactful digital solutions. Learn about the tools, frameworks, and strategies that powered each build, and see how innovation meets functionality in every project we deliver.</p>
+          <p className="text-[15px] text-slate-600 leading-relaxed">Explore comprehensive information about our projects, including architecture details, tech stacks, and implementation approaches. Each project showcases problem-solving skills, efficient design patterns, and optimized workflows aimed at delivering high-quality solutions.</p>
         </div>
         <div>
-          <img src="https://readymadeui.com/images/kpis-dashboard-img.webp" alt="hero Image" class="rounded-lg object-contain w-full h-full" />
+          <img src="https://readymadeui.com/images/kpis-dashboard-img.webp" alt="hero Image" className="rounded-lg object-contain w-full h-full" />
         </div>
       </div>
     </div>
 
-    <div class="bg-gray-50 max-w-screen-xl mx-auto my-20">
-      <div class="grid lg:grid-cols-3 justify-center items-center gap-y-12">
-        <div class="lg:col-span-2 p-8 w-full max-w-2xl mx-auto">
+    <div className="bg-gray-50 max-w-screen-xl mx-auto my-20">
+      <div className="grid lg:grid-cols-3 justify-center items-center gap-y-12">
+        <div className="lg:col-span-2 p-8 w-full max-w-2xl mx-auto">
           <div>
-            <h2 class="text-3xl text-slate-900 font-bold">Add New Project</h2>
-            <p class="text-[15px] text-slate-600 leading-relaxed mt-4">Have a new idea or ongoing work to showcase? Add your project here! Share your project details, goals, and progress to keep your team and collaborators updated. Let’s bring your ideas to life and make them part of our growing collection of projects.</p>
+            <h2 className="text-3xl text-slate-900 font-bold">Add New Project</h2>
+            <p className="text-[15px] text-slate-600 leading-relaxed mt-4">Have a new idea or ongoing work to showcase? Add your project here! Share your project details, goals, and progress to keep your team and collaborators updated. Let’s bring your ideas to life and make them part of our growing collection of projects.</p>
           </div>
-          <form class="mt-8">
-            <div class="grid sm:grid-cols-2 gap-4">
+          <form className="mt-8">
+            <div className="grid sm:grid-cols-2 gap-4">
               <div>
-                <label class='text-sm text-slate-900 font-medium mb-2 block'>Project Name</label>
+                <label className='text-sm text-slate-900 font-medium mb-2 block'>Project Name</label>
                 <input type='text' placeholder='Enter Project Name'
-                  class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
+                  className="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
               </div>
               
               <div>
-                <label class='text-sm text-slate-900 font-medium mb-2 block'>Project Manager</label>
+                <label className='text-sm text-slate-900 font-medium mb-2 block'>Project Manager</label>
                 <input type='text' placeholder='Enter Project Manager Name'
-                  class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
+                  className="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
               </div>
-              <div class="col-span-full">
-                <label class='text-sm text-slate-900 font-medium mb-2 block'>Project Description</label>
+              <div className="col-span-full">
+                <label className='text-sm text-slate-900 font-medium mb-2 block'>Project Description</label>
                 <textarea placeholder='Describe Your Project' rows="6"
-                  class="w-full px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm pt-3 outline-0 rounded-md"></textarea>
+                  className="w-full px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm pt-3 outline-0 rounded-md"></textarea>
               </div>
             </div>
             <button type='button'
-              class="text-white bg-slate-900 font-medium hover:bg-slate-800 tracking-wide text-sm px-4 py-3 w-full border-0 outline-0 rounded-md cursor-pointer mt-6">Add The Project</button>
+              className="text-white bg-slate-900 font-medium hover:bg-slate-800 tracking-wide text-sm px-4 py-3 w-full border-0 outline-0 rounded-md cursor-pointer mt-6">Add The Project</button>
           </form>
         </div>
 
-        <div class="relative lg:h-screen">
+        <div className="relative lg:h-screen">
           <img src={ProjectImg} alt="app-img"
-            class="w-full h-full object-cover object-top lg:absolute lg:right-0 lg:top-0 lg:bottom-0" />
+            className="w-full h-full object-cover object-top lg:absolute lg:right-0 lg:top-0 lg:bottom-0" />
         </div>
       </div>
     </div>
