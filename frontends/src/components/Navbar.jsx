@@ -38,10 +38,10 @@ const Navbar = () => {
                 <Link className="hover:text-blue-700 text-blue-700 block font-medium text-[15px]" to="/">Home</Link>
               </li>
               <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
-                <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/projects">Projects</Link>
+                <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/projects/create">Projects View</Link>
               </li>
               <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
-                <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/bugsList">View Existing Bugs</Link>
+                <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/bugsList">Existing Bugs View</Link>
               </li>
               <li className="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3">
                 <Link className="hover:text-blue-700 text-slate-900 block font-medium text-[15px]" to="/bugs">Add Bugs</Link>

@@ -13,7 +13,7 @@ const ProjectsPage = () => {
     const [qas, setQas] = useState("");
     const [developer, setDeveloper] = useState(""); 
 
-    const TOKEN =  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYwNzI4MTgwLCJpYXQiOjE3NjA3MTAxODAsImp0aSI6ImY2ZGQyZjU1NTdkZDQ1MWE4N2QwN2QxYmQ5NGVjYTM3IiwidXNlcl9pZCI6IjEifQ.u5xuHWQKH2s7sJ1PtM2j0V7whYp3lKHR2kreU6lnkZM"
+    const TOKEN =  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYxMDYxODU2LCJpYXQiOjE3NjEwNDM4NTYsImp0aSI6ImVmYWUxMTFmOTNiZTRiZDg4ZDg5OGM0ZDY1NDQ0ZmJjIiwidXNlcl9pZCI6IjEifQ.qis3WsfBKayFV86eD6jxhzrPHWR0kTAbUcVAPs8MfEA"
     useEffect(() => {
         fetchProject();
     }, [])
