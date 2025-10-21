@@ -1,6 +1,23 @@
 import React from "react";
 
 const BugsListPage = () => {
+
+  const deleteBug = async (pk) => {
+        try {
+            await fetch(`http://127.0.0.1:8000/api-bugs/bugs/${pk}`, { 
+                method: "DELETE",
+                headers: {
+
+                    "Authorization": `Bearer ${TOKEN}` 
+                },
+            });
+
+            setBugsInfo((prev) => prev.filter((bug) => bug.id !== pk));
+        } catch (error) {
+            console.error("error while deleting the bug", error);
+        }
+    };
+
   
   const bugs = [
     {
@@ -87,7 +104,7 @@ const BugsListPage = () => {
                 <button className="px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-all">
                   Edit
                 </button>
-                <button className="px-5 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 transition-all">
+                <button onClick={deleteBug} className="px-5 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 transition-all">
                   Delete
                 </button>
               </div>

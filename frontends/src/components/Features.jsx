@@ -5,6 +5,8 @@ import attachmentImg2 from '../assets/attachment2.jpg'
 import attachmentImg3 from '../assets/attachment3.jpg'
 
 const Features = () => {
+
+  
   const attachments = [
     {
       id: 1,
@@ -53,10 +55,10 @@ const Features = () => {
                 Uploaded On: {item.created_at}
               </p>
               <div className="mt-4 flex justify-center gap-3">
-                <button className="px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-all">
+                <button onClick={viewData} className="px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-all">
                   View
                 </button>
-                <button className="px-5 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 transition-all">
+                <button onClick={deleteData} className="px-5 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 transition-all">
                   Delete
                 </button>
               </div>
